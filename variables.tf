@@ -31,5 +31,5 @@ variable "instance_type" {}
 
 variable "cidr_blocks_ingress_bastion" {
   type    = list(string)
-  default = ["45.119.28.0/24"] # Raj's IP range
+  default = ["49.204.129.237/32"]
 }
