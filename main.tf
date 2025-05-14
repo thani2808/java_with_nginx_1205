@@ -69,7 +69,7 @@ resource "aws_instance" "bastion" {
               add-apt-repository --yes --update ppa:ansible/ansible
               apt install -y ansible >> /var/log/ansible-install.log 2>&1
               echo "Ansible installed successfully" >> /var/log/ansible-install.log
-              git clone git@github.com:thani2808/java_with_ansible_1205.git /opt/ansible-playbooks
+              git clone git@github.com:thani2808/java_with_ansible_1205.git ~/java_with_ansible_1205
               echo "Git repo cloned successfully" >> /var/log/ansible-install.log
               EOF
 
